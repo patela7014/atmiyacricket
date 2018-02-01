@@ -45,57 +45,53 @@
     <!--<script src="assets/js/modernizr-2.8.0.min.js"></script>-->
 </head>
 <body>
-    <div id="header">
-        <div class="header-bg">
-            <div class="navbar navbar-default">
-                <div class="container">
-                    <div class="navigation">
-                        <ul class="nav navbar-nav hidden-xs visible-sm visible-md visible-lg">
-                            <li ><a href="rules.html">Rules</a></li>
-                            <li onclick="scrollto('teams');">Teams</li>
-                            <a class="navbar-brand" href="index.html"><img src="assets/images/logo.jpg" alt="logo"></a>
-                            <li onclick="scrollto('schedule');">Schedule</li>
-                            <li onclick="scrollto('gallery');">Gallery</li>
-                        </ul>
-                        <div class="nav navbar-nav hidden-sm hidden-md hidden-lg">
-                            <div class="row">
-                                <div class="col-xs-6">
-                                    <a class="navbar-brand" href="index.html"><img src="assets/images/logo.jpg" alt="logo"></a>
-                                </div>
-                                <div class="col-xs-6">
-                                    <ul class="list-unstyled">
-                                        <li><a href="rules.html">Rules</a></li>
-                                        <li onclick="scrollto('teams');">Teams</li>
-                                        <li onclick="scrollto('schedule');">Schedule</li>
-                                        <li onclick="scrollto('gallery');">Gallery</li>
-                                    </ul>
-                                </div>
+<div id="header">
+    <div class="header-bg">
+        <div class="navbar navbar-default">
+            <div class="container">
+                <div class="navigation">
+                    <ul class="nav navbar-nav hidden-xs visible-sm visible-md visible-lg">
+                        <li ><a href="rules.html">Rules</a></li>
+                        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.jpg" alt="logo"></a>
+                        <li ><a href="index.html">Home</a></li>
+                    </ul>
+                    <div class="nav navbar-nav hidden-sm hidden-md hidden-lg">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <a class="navbar-brand" href="index.html"><img src="assets/images/logo.jpg" alt="logo"></a>
+                            </div>
+                            <div class="col-xs-6">
+                                <ul class="list-unstyled">
+                                    <li><a href="rules.html">Rules</a></li>
+                                    <li ><a href="index.html">Home</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                  <!-- Nav Start -->
-                   <!-- <nav id="nav">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        
-                       <div class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav">
-                                <li onclick="scrollto('home');">Home</li>
-                                <li onclick="scrollto('teams');">Teams</li>
-                                <a class="navbar-brand" href="index.html"><img src="assets/images/logo.jpg" alt="logo"></a>
-                                <li onclick="scrollto('schedule');">Schedule</li>
-                                <li onclick="scrollto('gallery');">Gallery</li>
-                            </ul>
-                       </div>
-                   </nav>    -->
-               </div>
+                </div>
+                <!-- Nav Start -->
+                <!-- <nav id="nav">
+                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="sr-only">Toggle navigation</span>
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                     </button>
+
+                    <div class="navbar-collapse collapse">
+                         <ul class="nav navbar-nav">
+                             <li onclick="scrollto('home');">Home</li>
+                             <li onclick="scrollto('teams');">Teams</li>
+                             <a class="navbar-brand" href="index.html"><img src="assets/images/logo.jpg" alt="logo"></a>
+                             <li onclick="scrollto('schedule');">Schedule</li>
+                             <li onclick="scrollto('gallery');">Gallery</li>
+                         </ul>
+                    </div>
+                </nav>    -->
             </div>
         </div>
     </div>
+</div>
 
 <!-- <div class="banner">
     <img src="assets/images/banner.jpg"">
@@ -112,7 +108,10 @@
         <!-- embed responsive iframe -->
         <!-- ======================= -->
 
-        <div class="embed-container"><iframe src="ACL_RULES.pdf"></iframe></div>
+        <object data="ACL_RULES.pdf" width="100%" height="900" id='pdf_iframe' type='application/pdf'>
+            <p>Sorry, the PDF couldn't be displayed :(</p>
+        </object>
+
         <div class="row">
 
             <div class="col-sm-12">
@@ -139,6 +138,6 @@
 <script src="assets/js/bootstrap.min.js"></script>
 <!-- Custom JavaScript -->
 <script src="assets/js/custom.js"></script>
-    
+
 </body>
 </html>
