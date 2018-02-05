@@ -26,7 +26,7 @@ img{max-width:100%;}
 .navbar-default .navbar-nav li a:hover{text-decoration:none; }
 .banner{position: relative;display: inline-block;}
 .banner-content{position: absolute;top: 0;left: 0;text-align: center;display: block;z-index: 999;width: 100%;}
-#teams{padding: 20px 0;display: inline-block;width: 100%;}
+#teams{padding:0 0 20px;display: inline-block;width: 100%;}
 .heading{display: inline-block;text-align: center;width: 100%;margin: 20px 0;}
 .heading p{color: #949494;
     font-size: 14px;
@@ -72,7 +72,7 @@ img{max-width:100%;}
 .team-table .team-name span{line-height: 2.5;text-transform: uppercase;padding: 4px 10px;}
 .team-members{background-color: #333333;}
 .team-members span{padding: 3px 15px;display: inline-block;;width: 100%;padding: 4px 10px;line-height: 2.5;}
-#schedule{margin-bottom: 25px;}
+#schedule{margin: 25px 0;display: inline-block;width: 100%;`}
 .nav-tabs {text-align: center;}
 .nav-tabs li{float: none;display: inline-block;margin-bottom: 0;    margin: 0 20px 0 0;}
 .nav-tabs li:last-child{margin: 0;}
@@ -136,10 +136,14 @@ img{max-width:100%;}
     float: right;
 }
 .schedule-box {
-    margin-top: 110px;
+    margin-top: 35px;
     display: inline-block;
     width: 100%;
+    position: relative;
 }
+.time{font-style: italic;margin-bottom: 90px;text-align: center;}
+.time span{padding: 10px;color: #fff;background: #FF5E00;display: inline-block;}
+
 #gallery{margin-bottom: 15px;display: inline-block;width: 100%;}
 #gallery .heading h2::before{width: 50px;}
 #gallery img{max-width: 100%;margin-bottom: 20px;}
@@ -150,6 +154,8 @@ img{max-width:100%;}
 .footer p{margin-bottom: 0;}
 .top-button{position: fixed;bottom: 45px;right: 30px;}
 .top-button span{font-size: 36px;color: #FF5E00;cursor: pointer;}
+
+
 
 @media (max-width: 1199px) {
 body{font-size: 14px;line-height: 1.2;}
@@ -180,8 +186,8 @@ article.right{margin-top: 80px;}
 .heading h2{font-size: 20px;}
 .heading h2::before{width: 70px;}
 #gallery .heading h2::before{width: 30px;}
-.schedule-box{border-bottom: 1px dashed #b7b7b7;margin-top: 65px;padding-bottom: 20px;}
-.schedule-box:first-child{margin-top: 110px;}
+.schedule-box{border-bottom: 1px dashed #b7b7b7;margin-top: 40px;padding-bottom: 20px;}
+/*.schedule-box:first-child{margin-top: 110px;}*/
 .schedule-box:last-child{border-bottom:none;}
 }
 
